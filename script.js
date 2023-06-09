@@ -22,7 +22,7 @@ const findMovies = () =>{
 // fetching movie from omdb api
 // fetching movie from omdb api
 async function fetchMovies(searchTerm) {
-    const URL = `http://www.omdbapi.com/?s=${searchTerm}&apikey=3cbf092a`; // Update URL to use "s" parameter for searching by title
+    const URL = `https://www.omdbapi.com/?s=${searchTerm}&apikey=3cbf092a`; // Update URL to use "s" parameter for searching by title
     const res = await fetch(URL); // Fetching data from server
     const data = await res.json(); // Convert data to JSON
 
