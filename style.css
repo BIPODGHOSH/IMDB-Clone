@@ -1,0 +1,91 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background color and font styles */
+  body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  /* Style the logo and navigation bar */
+  .logo {
+    background-color: #0c0c0c;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo img {
+    height: 40px;
+  }
+  
+  #fav {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Style the search container */
+  .search-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #242121;
+  }
+  
+  .search-element {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-list {
+    margin-top: 10px;
+    background-color: #a59090;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .search-item-thumbnail img {
+    height: 80px;
+  }
+  
+  .search-item-info {
+    margin-left: 10px;
+  }
+  
+  /* Hide the suggestion box by default */
+  .hide-search-list {
+    display: none;
+  }
+  

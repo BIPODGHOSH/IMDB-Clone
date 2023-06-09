@@ -1,0 +1,170 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font styles */
+body {
+  background-color: #211f1f;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Style the logo and navigation bar */
+.logo {
+  background-color: #0c0c0c;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img {
+  height: 40px;
+}
+
+#fav {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the result container */
+.result-container {
+  margin-top: 80px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.result-grid {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: rgb(50, 46, 46);
+}
+
+.movie-poster img {
+  height: auto;
+  width: auto;
+}
+
+.movie-info {
+  width: 60%;
+  margin: 50px;
+}
+
+.movie-title {
+  font-size: 30px;
+  color: darkorange;
+  margin-bottom: 5px;
+}
+
+.movie-misc-info li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.genre,
+.writer,
+.actors,
+.plot,
+.language,
+.awards {
+  margin-bottom: 5px;
+}
+
+.delete-btn {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  /* Adjust the font size to increase the button size */
+  cursor: pointer;
+  margin: 50px;
+}
+
+.delete-btn i {
+  pointer-events: none;
+}
+
+/* Show the delete button on hover */
+.result-grid:hover .delete-btn {
+  display: block;
+}
+
+/* Media Query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  /* .container {
+      flex-direction: column;
+      align-items: flex-start;
+    } */
+
+  .result-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo img {
+    margin-bottom: 10px;
+  }
+
+  .result-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  /* .movie-poster img {
+    height: 50vh;
+  } */
+
+  .movie-info {
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .movie-info {
+    width: 80%;
+    margin-left: 10vw;
+  }
+
+  .movie-title {
+    font-size: 20px;
+    color: rgb(172, 192, 72);
+    margin-bottom: 5px;
+  }
+
+  .movie-misc-info li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  .genre {
+    font-size: 20px;
+    color: rgb(172, 192, 72);
+    margin-bottom: 5px;
+  }
+
+  .writer,
+  .actors,
+  .plot,
+  .language,
+  .awards {
+    /* font-size: 10px; */
+    margin-bottom: 5px;
+  }
+
+  .movie-info {
+    margin-top: 10px;
+  }
+
+  .delete-btn {
+    margin: 10px 0;
+  }
+}
