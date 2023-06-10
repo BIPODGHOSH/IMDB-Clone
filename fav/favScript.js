@@ -13,7 +13,7 @@ favMovies.forEach((id) => {
 // get movies from server
 async function getData(movieID){
     console.log(movieID);
-    const result = await fetch(`http://www.omdbapi.com/?i=${movieID}&apikey=3cbf092a`); //get data from api
+    const result = await fetch(`https://www.omdbapi.com/?i=${movieID}&apikey=3cbf092a`); //get data from api
     const movieDetails = await result.json(); //make data readable
 
     AddMovie(movieDetails); //add to dom
